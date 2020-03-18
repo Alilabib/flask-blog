@@ -1,0 +1,5 @@
+{% extends "layout.html"%} {% block heading %} Hello {% endblock %} {% block body %}
+
+<h2> Hello Mr/Ms : {{ name }} </h2>
+<a href="{{url_for('more')}}"> More </a> <br>
+<a href="{{url_for('index')}}"> Home </a> {% endblock %}

@@ -1,0 +1,19 @@
+{% block heading %} {{title}} {%endblock%} {% block body %} {% if new_year %}
+<h1> Yes! Happy New Year </h1>
+{% else %}
+<h1> No </h1>
+{% endif %}
+
+<h1> Names </h1>
+
+<ul>
+    {% for name in names %}
+    <li>
+        {{ name }}
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{{ url_for('more') }}"> More</a> <br>
+
+<a href="{{url_for('form')}}"> Form </a> {% endblock %}
